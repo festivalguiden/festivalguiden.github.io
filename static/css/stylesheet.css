@@ -1,0 +1,302 @@
+
+
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
+.festivalknapp {
+	padding: 10px;
+	border-radius: 20px;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+
+
+}
+
+.festivaldata{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: white;
+	float: bottom;
+	visibility: hidden;
+
+}
+
+.festivalrute{
+	min-width: 292px;
+	min-height: 266px;
+}
+
+.datacontainer{
+position: relative;
+width: 100%;
+}
+
+.overskrift{
+	color: black;
+}
+
+.tile{
+background-image: url("http://interaktiv.smp.no/2014/Festivaler/images/tile.jpg");
+
+}
+
+.velg {
+	background-color: white;
+	border-radius: 30px;
+	border: 10px solid black;
+
+}
+
+.h2-break{
+	position:relative;
+	display:block;
+	letter-spacing:0.21em;
+	font-weight:500;
+	text-transform:uppercase;
+	color:#555555;
+	text-align:center;
+}
+
+
+.knapp{
+margin-top: 15px;
+}
+
+.knapp2{
+margin: 1px;
+}
+
+.logoB{
+width: 80%;
+min-width: 128px;
+max-width: 600px;
+margin-top: -40px;
+}
+
+.logoBmobil	{
+width: 80%;
+min-width: 128px;
+max-width: 600px;
+}
+
+.knappebredde{
+	margin-right: 150px;
+	margin-left:150px;
+}
+
+
+
+
+.overskrift3-detalj{
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.overskrift-story{
+	font-style: bold;
+	text-transform:uppercase;
+	color: black;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.brod-story{
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#detaljbilde {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden; /* will contain if #first is longer than #second */
+    margin-bottom: 5%;
+}
+#first {
+    width: 50%;
+    float:left; /* add this */
+}
+#second {
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+.footertekst{
+	color: white;
+	text-align: center;
+	margin-top: 1%;
+}
+
+.footertekstmobil{
+	color: white;
+	text-align: center;
+	margin-top: 1%;
+}
+
+.svartfelt{
+	background-color: black;
+	padding-top: 50px;
+	padding-bottom:50px;
+}
+
+.svartfeltmobil{
+	background-color: black;
+	padding-top: 15px;
+	padding-bottom:15px;
+}
+
+
+.svartfelttekst{
+	padding-left: 10%;
+	padding-right:10%;
+	text-align: center;
+	color: white;
+}
+
+
+.brodtekst{
+	margin: 40px;
+	text-align: center;
+}
+
+.detaljtopp{
+width:100%;
+position: relative;
+top: -30px;
+left: 0px;
+
+}
+
+.bgbilde{
+	width: 100%;
+	position: relative;
+	
+}
+
+.fgbilde{
+	width: 100%;
+	position: absolute; 
+	bottom: 0;
+	opacity:0.8;
+}
+
+.bilde{
+	margin-top:-30px;
+
+}
+
+.festivalnavn{
+	color: black;
+	font-size: 4em;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.festivaldato{
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 40px;
+
+}
+
+.festivalnavnmobil{
+	color: black;
+	font-size: 2em;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.festivaldatomobil{
+	color: black;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 40px;
+
+}
+
+.sitat{
+	color: white;
+	font-size: 4em;
+	margin:50px;
+	text-align: center;
+}
+
+.sitatmobil{
+	color: white;
+	font-size: 2em;
+	margin:25px;
+	text-align: center;
+}
+
+.headliners{
+	color: white;
+	font-size: 2em;
+	margin:50px;
+	text-align: center;
+
+}
+
+.headlinersmobil{
+	color: white;
+	font-size: 1.5em;
+	margin:20px;
+	text-align: center;
+
+}
+
+.brod{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.arrangor{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.velkommen{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.margin{
+	margin: 0%;
+
+}
+
+.marginmobil{
+	margin: 5%;
+
+}
+
+.annonse{
+text-align: center;
+
+}
+.listehead{
+	font-size: 2em;
+
+}
+.avstand{
+	margin-bottom: 5px;
+}

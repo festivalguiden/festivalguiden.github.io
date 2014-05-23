@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab|Dosis' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css"/>
+    <link rel="shortcut icon" type="image/png" href="/static/images/favF.png"/>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2">
+    </script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+    </script>
+
+    <!--  Mobilview først-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  
+  <!-- 
+
+id
+name
+datestart
+dateend
+place
+x
+y
+organizer
+site
+pop
+rock
+metal
+indie
+jazz
+blues
+folk
+country
+dancing
+rap-hip-hop
+classical
+other
+bygdefestival
+teaterrevyhumor
+lineup
+shows profile ticketsprize
+sone1 (0-500) sone2 (500-1000)
+sone3 (1000-1500) sone4 (1500+) sone5 (dagspass)
+sone6 (todagerspass)
+sone7 (undgomspass) sone 8 (gratis for barn)
+free
+discount
+age alcohol budget
+sponsors
+estaudience forchildren barnevennlig
+food-drink
+camptype
+camp
+transportationtype
+transportation
+market
+disabledtype
+disabled
+sanitary
+paid-staff
+unpaidstaff anno
+more
+Ferdig
+Ansvar
+
+
+  -->
+
+
+<!--navigasjon-->  
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">
+          Toggle navigation
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+      </button>
+      <a class="navbar-brand" href="http://www.smp.no" target="_blank">
+        <img src="/static/images/S.png">
+      </a>
+      
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="/">
+            TILBAKE TIL FESTIVALGUIDEN
+          </a>
+        </li>
+        <li>
+          <a href="#din">
+            DIN FESTIVAL
+          </a>
+        </li>
+        <li>
+          <a href="#program">
+            ÅRETS FESTIVAL
+          </a>
+        </li>
+        <li>
+          <a href="#omdenne">
+            OM FESTIVALEN
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!--end navigasjon-->
+
+
+
+<!--Introbilde for desktop-->
+<div id="container" class="bilde hidden-xs">
+  <div class="bgbilde">
+    <img style="width:100%"src="/static/images/Topp/34a.jpg"/>
+    <div class="fgbilde">
+      <img style="width:100%"src="/static/images/detaljtopp.png"/>
+    </div>
+  </div>
+</div>
+<!--End introbilde for desktop-->
+
+<!--Introbilde for mobil-->
+<div id="container" class="bilde hidden-sm hidden-md hidden-lg">
+  <div class="bgbilde">
+    <img style="width:100%"src="/static/images/Topp/34a.jpg"/>
+    <div class="fgbilde">
+      <img style="width:100%"src="/static/images/detaljtopp-mobil.png"/>
+    </div>
+  </div>
+</div>
+<!--End ntrobilde for mobil-->
+
+
+
+
+
+
+
+
+<!--Body start-->
+<body style= "background-color:#fffff;padding-top:70px;font-family:Dosis"> 
+  <a name="din">
+  </a>
+    <!--Festivalnavn for desktop-->
+  <div class="margin hidden-xs">
+    
+    <br>
+    <p class="festivalnavn hidden-xs">
+      Sommerfesten på Giske
+    </p>
+    </div>
+    <div>
+    <p class="festivaldato hidden-xs">
+      05.07.2014,
+      <br>
+      Øygardshamna, Giske
+    </p>
+    </div>
+    <!--End festivalnavn for desktop-->
+
+    <!--Festivalnavn for mobil-->
+  <div class="marginmobil hidden-sm hidden-md hidden-lg">
+    
+    <br>
+    <p class="festivalnavnmobil hidden-sm hidden-md hidden-lg">
+      Sommerfesten på Giske
+    </p>
+    </div>
+    <div>
+    <p class="festivaldatomobil hidden-sm hidden-md hidden-lg">
+      05.07.2014,
+      <br>
+      Øygardshamna, Giske
+    </p>
+    </div>
+    <!--End festivalnavn for mobil-->
+
+
+
+<!--annonsescript-->
+<div class="annonse">
+<p>Annonse:</p>
+<script type="text/javascript">
+document.write('' +
+    '<scr' + 'ipt type="text/javascript">\n' +
+    'var cx_props = {\n' +
+    '    adSpaceId: "000000015fa39bc3"\n' +
+    '};\n' +
+    '</scr' + 'ipt>\n');
+</script>
+
+<script type="text/javascript" src="http://cdn.cxense.com/cx.js"></script>
+<script type="text/javascript" src="http://cdn.cxense.com/sync-ad.js"></script>
+</div>
+<!--annosesscript end-->
+
+
+
+
+
+
+    <a name="program">
+    </a>
+    <!--Artister for desktop-->
+    <div class="svartfelt hidden-xs">
+      
+      <div class="headliners hidden-xs">
+        Årets artister: 
+        <br>
+        Violet Road, Mahogni, Rumle In Rhodos, Hanne Kolstø, Bendik, Sassybeat, Sigrid Raabe, Thom Hell, Death By Unga Bunga, Monica Heldal, O Martin, Hvitmalt Gjerde, Lena Nymark, Einar Stray, Spirits Of The Dead, Captain Walker, pluss flere. 
+        <br>
+      </div>
+    </div>
+    <!--End artister for desktop-->
+
+    <!--Artister for mobil-->
+    <div class="svartfeltmobil hidden-sm hidden-md hidden-lg">
+      
+      <div class="headlinersmobil hidden-sm hidden-md hidden-lg">
+        I år får du: 
+        <br>
+        Violet Road, Mahogni, Rumle In Rhodos, Hanne Kolstø, Bendik, Sassybeat, Sigrid Raabe, Thom Hell, Death By Unga Bunga, Monica Heldal, O Martin, Hvitmalt Gjerde, Lena Nymark, Einar Stray, Spirits Of The Dead, Captain Walker, pluss flere. 
+        <br>
+      </div>
+
+    </div>
+    <!--End artister for mobil-->
+
+
+
+
+
+
+    <div id="container">
+      <img style="width:100%"src="/static/images/34b.jpg"/>
+    </div>
+
+
+
+  
+    
+    <!--sitat desktop-->
+    <div class="svartfelt hidden-xs">
+      <div class="sitat hidden-xs">
+        «Peace, love &amp; understanding»
+        <br>
+      </div>
+    </div>
+    <!--sitat desktop end-->
+    <!--sitat mobil-->
+    <div class="svartfeltmobil hidden-sm hidden-md hidden-lg">
+      <div class="sitatmobil hidden-sm hidden-md hidden-lg">
+        «Peace, love &amp; understanding»
+        <br>
+      </div>
+    </div>
+    <!--sitat mobil end-->
+
+
+
+
+        <a name="omdenne">
+  </a>
+    </a>
+    <div style="padding:50px;"class="row">
+      <div class="col-md-12" style="text-align:center">
+        <p class="listehead">
+          Arrangøren forteller:
+        </p>
+        <p class="brod">
+          Sommerfesten er verdens største vennefest og det er Peace, Love &amp; Understanding som står i fokus. Vi begynte i et naust for over ti år siden og i dag er vi en av Norges største festivaler. Sommerfesten er løftet fram av et enormt engasjement og masse kjærlighet. Dugnad og lokalt driv kombinert med store mengder kaker fra de lokale kakebaketradisjonene skaper en fantastisk energi som alle tilreisende får nyte godt av. I 2012 hadde festivalen besøk fra over 50 nasjoner og var vertskap for media fra hele Europa og i 2013 flyttet vi festivalområdet tilbake til Øygardshamna, i nærområdet hvor festivalen ble arrangert de første årene. Sommerfesten på Giske er, og vil altid være, en festival utenom det vanlige. En festival som elsker å kombinere sjangere og band i alle faser av karrieren. Ta med deg familien, vennene dine eller kom helt alene. Vi garanterer en helt spesiell festivalopplevelse på Giske 5. juli. Studiokonserter i Ocean Sound Recordings i forkant av festivalen.
+          <br>
+          <p class="arrangor avstand"><i>Arrangør: Momentium.</i></p>
+        </p>
+      </div>
+      <div class="col-md-12" style="text-align:center margin-top:30px">
+        <p class="listehead brod">
+          Om festivalen:
+        </p>
+        <p class="brod">
+          <b class="avstand">
+           Aldersgrense: 
+          </b>
+          Ingen aldersgrense.
+          <br>
+          <b class="avstand">
+            Billetter: 
+          </b>
+          Gratis inngang, men besøkende oppfordres til å spleise. En kan forhåndsspleise på www.tikkio.com
+          <br>
+          <b class="avstand">
+            For barna: 
+          </b>
+          Eget barneshow og barneområde på festivalområdet.
+          <br>
+          <b class="avstand">
+            For funksjonshemmede: 
+          </b>
+          Egen handikapparkering, handikaptoalett, tilrettelagt for rullestol, eget handikapområde, gratis inngang for verge. 
+          <br>
+          <b class="avstand">
+            Forventa publikum:
+          </b>
+            6000
+            <br>
+         <b class="avstand">
+            Marked: 
+          </b>
+          Diverse stands.
+        <br>
+         <b class="avstand">
+            
+          </b>
+            
+            <br>
+            </p>
+            <p class="brod">
+          <a href="http://www.momentium.no/sommerfesten"  target="_blank">Mer informasjon finner du på festivalen sin nettside.</a> 
+          </p>
+      </div>
+    </div>
+
+
+
+
+    <a name="some">
+    </a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23smpno" data-widget-id="466131340258074624">
+          Tweets om «#smpno»
+        </a>
+        
+        <script>
+          !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+        
+      </div>
+      <div class="col-md-6 
+hidden-xs"><h3>
+          Sommerfesten på Giske er her:
+        </h3>
+  <div id="map" style="height:545px;max-width:520px">
+  </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+
+
+    <!--
+    <div class="container">
+      <div>
+        <h3>
+          Sommerfesten på Giske er her:
+        </h3>
+      </div>
+      <div id="map" style="width:100%; height:300px;">
+      </div>
+    </div>
+    <!--end containter-->
+
+
+<br>
+
+    <a name="om">
+    </a>
+<!--footer destop-->
+ <nav class="navbar navbar-default navbar-bottom hidden-xs" role="navigation" style="background-color:black;height:600px">
+  <div class="container">
+    <p class="footertekst">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <img src="/static/images/smp.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer destop-->
+
+<!--footer mobil-->
+ <nav class="navbar navbar-default navbar-bottom hidden-sm hidden-md hidden-lg" role="navigation" style="background-color:black;height:300px">
+  <div class="container">
+    <p class="footertekstmobil">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <br>
+      <img src="/static/images/smpmobil.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer mobil-->
+
+
+
+
+
+
+
+       <script type="text/javascript">
+            var map = L.map('map').setView([62.51019, 6.04235], 10);
+            var mapquestLayer = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>,<a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
+                subdomains: ['otile1','otile2','otile3','otile4']
+            });
+            map.addLayer(mapquestLayer);
+            var marker = L.marker([62.51019, 6.04235]).addTo(map);
+        </script>
+    </body>
+</html>

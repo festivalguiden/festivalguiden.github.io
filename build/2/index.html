@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab|Dosis' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css"/>
+    <link rel="shortcut icon" type="image/png" href="/static/images/favF.png"/>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2">
+    </script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+    </script>
+
+    <!--  Mobilview først-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  
+  <!-- 
+
+id
+name
+datestart
+dateend
+place
+x
+y
+organizer
+site
+pop
+rock
+metal
+indie
+jazz
+blues
+folk
+country
+dancing
+rap-hip-hop
+classical
+other
+bygdefestival
+teaterrevyhumor
+lineup
+shows profile ticketsprize
+sone1 (0-500) sone2 (500-1000)
+sone3 (1000-1500) sone4 (1500+) sone5 (dagspass)
+sone6 (todagerspass)
+sone7 (undgomspass) sone 8 (gratis for barn)
+free
+discount
+age alcohol budget
+sponsors
+estaudience forchildren barnevennlig
+food-drink
+camptype
+camp
+transportationtype
+transportation
+market
+disabledtype
+disabled
+sanitary
+paid-staff
+unpaidstaff anno
+more
+Ferdig
+Ansvar
+
+
+  -->
+
+
+<!--navigasjon-->  
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">
+          Toggle navigation
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+      </button>
+      <a class="navbar-brand" href="http://www.smp.no" target="_blank">
+        <img src="/static/images/S.png">
+      </a>
+      
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="/">
+            TILBAKE TIL FESTIVALGUIDEN
+          </a>
+        </li>
+        <li>
+          <a href="#din">
+            DIN FESTIVAL
+          </a>
+        </li>
+        <li>
+          <a href="#program">
+            ÅRETS FESTIVAL
+          </a>
+        </li>
+        <li>
+          <a href="#omdenne">
+            OM FESTIVALEN
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!--end navigasjon-->
+
+
+
+<!--Introbilde for desktop-->
+<div id="container" class="bilde hidden-xs">
+  <div class="bgbilde">
+    <img style="width:100%"src="/static/images/Topp/2a.jpg"/>
+    <div class="fgbilde">
+      <img style="width:100%"src="/static/images/detaljtopp.png"/>
+    </div>
+  </div>
+</div>
+<!--End introbilde for desktop-->
+
+<!--Introbilde for mobil-->
+<div id="container" class="bilde hidden-sm hidden-md hidden-lg">
+  <div class="bgbilde">
+    <img style="width:100%"src="/static/images/Topp/2a.jpg"/>
+    <div class="fgbilde">
+      <img style="width:100%"src="/static/images/detaljtopp-mobil.png"/>
+    </div>
+  </div>
+</div>
+<!--End ntrobilde for mobil-->
+
+
+
+
+
+
+
+
+<!--Body start-->
+<body style= "background-color:#fffff;padding-top:70px;font-family:Dosis"> 
+  <a name="din">
+  </a>
+    <!--Festivalnavn for desktop-->
+  <div class="margin hidden-xs">
+    
+    <br>
+    <p class="festivalnavn hidden-xs">
+      Brøvøllsfestivalen
+    </p>
+    </div>
+    <div>
+    <p class="festivaldato hidden-xs">
+      27.-28.juni,
+      <br>
+      Straumgjerdet, Sykkylven
+    </p>
+    </div>
+    <!--End festivalnavn for desktop-->
+
+    <!--Festivalnavn for mobil-->
+  <div class="marginmobil hidden-sm hidden-md hidden-lg">
+    
+    <br>
+    <p class="festivalnavnmobil hidden-sm hidden-md hidden-lg">
+      Brøvøllsfestivalen
+    </p>
+    </div>
+    <div>
+    <p class="festivaldatomobil hidden-sm hidden-md hidden-lg">
+      27.-28.juni,
+      <br>
+      Straumgjerdet, Sykkylven
+    </p>
+    </div>
+    <!--End festivalnavn for mobil-->
+
+
+
+<!--annonsescript-->
+<div class="annonse">
+<p>Annonse:</p>
+<script type="text/javascript">
+document.write('' +
+    '<scr' + 'ipt type="text/javascript">\n' +
+    'var cx_props = {\n' +
+    '    adSpaceId: "000000015fa39bc3"\n' +
+    '};\n' +
+    '</scr' + 'ipt>\n');
+</script>
+
+<script type="text/javascript" src="http://cdn.cxense.com/cx.js"></script>
+<script type="text/javascript" src="http://cdn.cxense.com/sync-ad.js"></script>
+</div>
+<!--annosesscript end-->
+
+
+
+
+
+
+    <a name="program">
+    </a>
+    <!--Artister for desktop-->
+    <div class="svartfelt hidden-xs">
+      
+      <div class="headliners hidden-xs">
+        På årets program: 
+        <br>
+        Terje Sporsem, Lars Berrum, Ørjan Liavåg og Fredrik Steen (Hildegunn Moltubakk m.m), David Batra (sidekick på tv-programmet til Ylvis) samt musikk: Musikk: Nils-Petter and the Cadillacs, Playlife og Peter Rønning band. Aktivitetsdag dagtid laurdag med fysiker og barne-tv programleiar Andreas Wahl, og NRK-super profilane Christian Wiik-Gjerde og Ingunn Thon.  
+        <br>
+      </div>
+    </div>
+    <!--End artister for desktop-->
+
+    <!--Artister for mobil-->
+    <div class="svartfeltmobil hidden-sm hidden-md hidden-lg">
+      
+      <div class="headlinersmobil hidden-sm hidden-md hidden-lg">
+        I år får du: 
+        <br>
+        Terje Sporsem, Lars Berrum, Ørjan Liavåg og Fredrik Steen (Hildegunn Moltubakk m.m), David Batra (sidekick på tv-programmet til Ylvis) samt musikk: Musikk: Nils-Petter and the Cadillacs, Playlife og Peter Rønning band. Aktivitetsdag dagtid laurdag med fysiker og barne-tv programleiar Andreas Wahl, og NRK-super profilane Christian Wiik-Gjerde og Ingunn Thon.  
+        <br>
+      </div>
+
+    </div>
+    <!--End artister for mobil-->
+
+
+
+
+
+
+    <div id="container">
+      <img style="width:100%"src="/static/images/2b.jpg"/>
+    </div>
+
+
+
+  
+    
+    <!--sitat desktop-->
+    <div class="svartfelt hidden-xs">
+      <div class="sitat hidden-xs">
+        «Felleskjøpet møter Hawaii»
+        <br>
+      </div>
+    </div>
+    <!--sitat desktop end-->
+    <!--sitat mobil-->
+    <div class="svartfeltmobil hidden-sm hidden-md hidden-lg">
+      <div class="sitatmobil hidden-sm hidden-md hidden-lg">
+        «Felleskjøpet møter Hawaii»
+        <br>
+      </div>
+    </div>
+    <!--sitat mobil end-->
+
+
+
+
+        <a name="omdenne">
+  </a>
+    </a>
+    <div style="padding:50px;"class="row">
+      <div class="col-md-12" style="text-align:center">
+        <p class="listehead">
+          Arrangøren forteller:
+        </p>
+        <p class="brod">
+          Ein ekstremt fargerik og herlig bonderomantisk festival der Felleskjøpet møter Hawaii og Las Vegas på ein og samme gong. Ei hesj gjerdar festivalområdet inne, og her finn du alle slags fargerike skilt, deilige hengekøyer og herleg heimelaga KUbab, midt i eit landskap omringa av snødekte tindar og herlege fossefall.  
+          <br>
+          <p class="arrangor avstand"><i>Arrangør: Frivilligstyret i Brøvøllsfestivalen i samarbeid med Lag på Lag i Velledalen..</i></p>
+        </p>
+      </div>
+      <div class="col-md-12" style="text-align:center margin-top:30px">
+        <p class="listehead brod">
+          Om festivalen:
+        </p>
+        <p class="brod">
+          <b class="avstand">
+           Aldersgrense: 
+          </b>
+          18 år på kveldstid. Aktivitetsdag laurdag: Inga aldersgrense.
+          <br>
+          <b class="avstand">
+            Billetter: 
+          </b>
+          400 kr. for dagspass,
+500 kr. for festivalpass, Aktivitetsdag laurdag er gratis.
+          <br>
+          <b class="avstand">
+            For barna: 
+          </b>
+          Aktivitetsdag laurdag 28. juni med mange leikar for både born og vaksne. Hesteskokast og andre gamaldagse aktivitetar og leikar. Styltrekonkurranse, slakk line, ballkast, blekkbokstivoli, hoppeslott, lassokast, hesteriding, sauegjerde. Underhaldning frå NRK Super-profilane Ingunn Thon og Christian Wiik Gjerde. Fysikkshow frå fysikeren Andreas Wahl. Heimesnikra tivoliboder med sal av både mat, vafler, popcorn og andre godsaker. 
+
+          <br>
+          <b class="avstand">
+            For funksjonshemmede: 
+          </b>
+          Godt tilrettelagt for funksjonshemmede. Svært enkel tilgjengelegheit for rullestolbrukarar då det frå inngang til festivalområde ikkje er trapper eller anna behov for hjelp til framkomst. Det er også plassar rett foran scene for rullestolbrukarar ved behov. Handicaptoalett på festivalområdet.  
+          <br>
+          <b class="avstand">
+            Forventa publikum:
+          </b>
+            2000
+            <br>
+         <b class="avstand">
+            Marked: 
+          </b>
+          På aktivitetsdagen laurdag det eit &#34;tivolimarked&#34; med tivoliboder som sel mat og anna. 
+        <br>
+         <b class="avstand">
+            Festivalcamp: 
+          </b>
+            Har ein festivalcamp ca 500 m frå festivalområdet på &#34;Bollamarka camping&#34;. 
+            <br>
+            </p>
+            <p class="brod">
+          <a href="http://brovollsfestivalen.com/"  target="_blank">Mer informasjon finner du på festivalen sin nettside.</a> 
+          </p>
+      </div>
+    </div>
+
+
+
+
+    <a name="some">
+    </a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23smpno" data-widget-id="466131340258074624">
+          Tweets om «#smpno»
+        </a>
+        
+        <script>
+          !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+        
+      </div>
+      <div class="col-md-6 
+hidden-xs"><h3>
+          Brøvøllsfestivalen er her:
+        </h3>
+  <div id="map" style="height:545px;max-width:520px">
+  </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+
+
+    <!--
+    <div class="container">
+      <div>
+        <h3>
+          Brøvøllsfestivalen er her:
+        </h3>
+      </div>
+      <div id="map" style="width:100%; height:300px;">
+      </div>
+    </div>
+    <!--end containter-->
+
+
+<br>
+
+    <a name="om">
+    </a>
+<!--footer destop-->
+ <nav class="navbar navbar-default navbar-bottom hidden-xs" role="navigation" style="background-color:black;height:600px">
+  <div class="container">
+    <p class="footertekst">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <img src="/static/images/smp.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer destop-->
+
+<!--footer mobil-->
+ <nav class="navbar navbar-default navbar-bottom hidden-sm hidden-md hidden-lg" role="navigation" style="background-color:black;height:300px">
+  <div class="container">
+    <p class="footertekstmobil">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <br>
+      <img src="/static/images/smpmobil.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer mobil-->
+
+
+
+
+
+
+
+       <script type="text/javascript">
+            var map = L.map('map').setView([62.29194, 6.64662], 10);
+            var mapquestLayer = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>,<a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
+                subdomains: ['otile1','otile2','otile3','otile4']
+            });
+            map.addLayer(mapquestLayer);
+            var marker = L.marker([62.29194, 6.64662]).addTo(map);
+        </script>
+    </body>
+</html>
