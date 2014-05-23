@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab|Dosis' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css"/>
+    <link rel="shortcut icon" type="image/png" href="/static/images/favF.png"/>
+    
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2">
+    </script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+    </script>
+    
+    
+    <!--  Mobilview først-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">
+            Toggle navigation
+          </span>
+          <span class="icon-bar">
+            
+          </span>
+          <span class="icon-bar">
+          </span>
+          
+          <span class="icon-bar">
+          </span>
+        </button>
+        <a class="navbar-brand" href="http://www.smp.no" target="_blank">
+          <img src="/static/images/S.png">
+        </a>
+        
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#guide">
+              FESTIVALGUIDEN
+            </a>
+          </li>
+          <li>
+            <a href="#velg">
+              
+              VELG
+            </a>
+          </li>
+          <li>
+            <a href="#alle">
+              OVERSIKT
+            </a>
+          </li>
+          <li>
+            <a href="#sendinn">
+              SEND INN
+            </a>
+          </li>
+          <li>
+            <a href="#some">
+              #SMPFESTIVAL
+            </a>
+          </li>
+          <li>
+            <a href="#om">
+              OM
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+ 
+  
+
+
+
+<!--annonsescript desktop-->
+<div class="annonse hidden-xs">
+<script type="text/javascript">
+document.write('' +
+    '<scr' + 'ipt type="text/javascript">\n' +
+    'var cx_props = {\n' +
+    '    adSpaceId: "000000015fa39bc3"\n' +
+    '};\n' +
+    '</scr' + 'ipt>\n');
+</script>
+<script type="text/javascript" src="http://cdn.cxense.com/cx.js"></script>
+<script type="text/javascript" src="http://cdn.cxense.com/sync-ad.js"></script>
+</div>
+<!--end annosesscript desktop-->
+
+<!--annonsescript mobil-->
+<div class="annonse hidden-sm hidden-md hidden-lg">
+<script type="text/javascript">
+document.write('' +
+    '<scr' + 'ipt type="text/javascript">\n' +
+    'var cx_props = {\n' +
+    '    adSpaceId: "000000016009a280"\n' +
+    '};\n' +
+    '</scr' + 'ipt>\n');
+</script>
+<script type="text/javascript" src="http://cdn.cxense.com/cx.js"></script>
+<script type="text/javascript" src="http://cdn.cxense.com/sync-ad.js"></script>
+ <!--end annonsescript mobil-->
+</div>
+
+
+
+
+
+
+<!--Body start-->
+  <body style= "background-color:#fffff;padding-top:70px;font-family:Dosis;">
+    <div class="container">
+      <!--Annonse-
+      <img  class="displayed" style="width:100%;margin-top:-20px;"src="/static/images/Annonse.jpg" />
+                  -->
+      <a name="guide">
+      </a>
+      
+     <!--mobillogo start-->
+      <div class="h2-break">
+        <div class="hidden-sm hidden-md hidden-lg">
+          <img style="margin-top:-60px" width="100%" src="/static/images/vimpler.jpg" />
+          <img class="logoBmobil" src="/static/images/logoBxs.png" />
+          <hr>
+        </div>
+      </div> 
+     <!--mobillogo end-->
+
+    <!--desktoplogo start-->
+    <div class="h2-break">
+      <div class="hidden-xs">
+        <img style="margin-top:-60px" width="100%" src="/static/images/vimpler.jpg" />
+        <img class="logoB" src="/static/images/logoB.png" />
+        <hr>
+      </div>
+    </div>
+    <!--desktoplogo end-->
+          
+      <a name="velg">
+      </a>
+      
+      <!--intro-->
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title brod">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Velkommen til Sunnmørspostens festivalguide. Klikk her for mer info om guiden.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body brod">
+        <p> Festivalguiden har samlet over 40 festivaler på Nordvestlandet på ett sted. Her kan du surfe deg gjennom festivaltilbudene og finne godbitene for deg, familien din eller vennegjengen. Velg kriterier du mener er viktige, og se hvilke festivaler guiden finner som passer for deg. </p>
+ 
+ <p>Festivalguiden spenner fra de største festivalene til de mindre, lokale bygdefestivalene. Innholdet er basert på opplysninger fra arrangørene, og innhentingen av informasjon ble avsluttet 1. mai. Har du flere opplysninger eller informasjon om andre festivaler kan du sende oss dette <a href="#sendinn">her</a>.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+      <!--mobilknapper start-->
+          <div class="h2-break">
+            <div class="hidden-sm hidden-md hidden-lg">
+            <p>
+              
+              <span>
+                
+                <h3>
+                  VELG HVA DU VIL HA:
+                </h3>
+              </span>
+            </p>
+            <p>
+            
+            <button type="button" class="btn btn-warning btn-sm knapp2">
+              MAI
+            </button>
+            <button type="button" class="btn btn-warning btn-sm knapp2">
+              JUNI
+            </button>
+            
+            <button type="button" class="btn btn-warning btn-sm knapp2">
+              JULI
+            </button>
+            
+            <button type="button" class="btn btn-warning btn-sm knapp2">
+              AUGUST
+            </button>
+            <button type="button" class="btn btn-danger btn-sm knapp2">
+              MUSIKK
+            </button>
+            
+            <button type="button" class="btn btn-danger btn-sm knapp2">
+              BYGDEFESTIVAL
+            </button>
+            <button type="button" class="btn btn-danger btn-sm knapp2">
+              TEATER/REVY/HUMOR
+            </button>
+            <button type="button" class="btn btn-danger btn-sm knapp2">
+              KUNST/LITTERATUR
+            </button>
+            
+            <button type="button" class="btn btn-danger btn-sm knapp2">
+              NATUR/HISTORIE
+            </button>
+            
+            <button type="button" class="btn btn-success btn-sm knapp2">
+              GRATIS
+            </button>
+            <button type="button" class="btn btn-success btn-sm knapp2">
+              OPP TIL 500 kr.
+            </button>
+            <button type="button" class="btn btn-success btn-sm knapp2">
+              FRA 500-1.000 kr.
+            </button>
+            
+            <button type="button" class="btn btn-success btn-sm knapp2">
+              OVER 1.000 kr.
+            </button>
+            
+            <button type="button" class="btn btn-success btn-sm knapp2">
+              FESTIVALPASS
+            </button>
+            <button type="button" class="btn btn-info btn-sm knapp2">
+              BARNEVENNLIG FESTIVAL
+            </button>
+            
+            <button type="button" class="btn btn-info btn-sm knapp2">
+              FESTIVALCAMP
+            </button>
+            
+            <button type="button" class="btn btn-info btn-sm knapp2">
+              TILBYR TRANSPORT
+            </button>
+            <button type="button" class="btn btn-info btn-sm knapp2">
+              TILRETTELAGT FOR FUNKSJONSHEMMEDE
+            </button>
+            
+            <br>
+            
+            <button type="button" class="btn btn-primary btn-sm knapp2">
+              VIS ALLE
+            </button>
+          </p>
+          
+        </div>
+      </div>
+    
+      <!--mobilknapper end-->
+
+    <!--desktopknapper start-->
+        <div class="h2-break knappebredde">
+          <div class="hidden-xs">
+          <p>
+            <span>
+              
+              <h3>
+                VELG HVA DU VIL HA:
+              </h3>
+              
+            </span>
+          </p>
+            <p>
+              <button type="button" class="btn btn-warning btn-lg knapp">
+                MAI
+              </button>
+              <button type="button" class="btn btn-warning btn-lg knapp">
+                JUNI
+              </button>
+              
+              <button type="button" class="btn btn-warning btn-lg knapp">
+                JULI
+              </button>
+              
+              <button type="button" class="btn btn-warning btn-lg knapp">
+                AUGUST
+              </button>
+              <button type="button" class="btn btn-danger btn-lg knapp">
+                MUSIKK
+              </button>
+              
+              <button type="button" class="btn btn-danger btn-lg knapp">
+                BYGDEFESTIVAL
+              </button>
+              <button type="button" class="btn btn-danger btn-lg knapp">
+                TEATER/REVY/HUMOR
+              </button>
+              <button type="button" class="btn btn-danger btn-lg knapp">
+                KUNST/LITTERATUR
+              </button>
+              
+              <button type="button" class="btn btn-danger btn-lg knapp">
+                NATUR/HISTORIE
+              </button>
+              
+              <button type="button" class="btn btn-success btn-lg knapp">
+                GRATIS
+              </button>
+              <button type="button" class="btn btn-success btn-lg knapp">
+                OPP TIL 500 kr.
+              </button>
+              <button type="button" class="btn btn-success btn-lg knapp">
+                FRA 500-1.000 kr.
+              </button>
+              
+              <button type="button" class="btn btn-success btn-lg knapp">
+                OVER 1.000 kr.
+              </button>
+              
+              <button type="button" class="btn btn-success btn-lg knapp">
+                FESTIVALPASS
+              </button>
+              <button type="button" class="btn btn-info btn-lg knapp">
+                BARNEVENNLIG FESTIVAL
+              </button>
+              
+              <button type="button" class="btn btn-info btn-lg knapp">
+                FESTIVALCAMP
+              </button>
+              
+              <button type="button" class="btn btn-info btn-lg knapp">
+                TILBYR TRANSPORT
+              </button>
+              <button type="button" class="btn btn-info btn-lg knapp">
+                TILRETTELAGT FOR FUNKSJONSHEMMEDE
+              </button>
+              
+              <br>
+              
+              <button type="button" class="btn btn-primary btn-lg knapp">
+                VIS ALLE
+              </button>
+          </p>
+        </div>
+      </div>
+  <!--desktopknapper end-->
+
+    <!--start test columns-->
+    
+    <!---Start liste-->
+    <a name="alle">
+    </a>
+    <br>
+    <hr>
+    <br>
+    <div class="container marketing h2-break">
+      <div class="row">
+         
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/1.jpg" style="width: 140px; height: 140px;">
+                  <h3>Back In The Fields Rock Festival</h3>
+                  <p><a class="btn btn-default" href="1" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/45.jpg" style="width: 140px; height: 140px;">
+                  <h3>Bjørnsonfestivalen</h3>
+                  <p><a class="btn btn-default" href="45" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/2.jpg" style="width: 140px; height: 140px;">
+                  <h3>Brøvøllsfestivalen</h3>
+                  <p><a class="btn btn-default" href="2" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/3.jpg" style="width: 140px; height: 140px;">
+                  <h3>Dei nynorske festspela</h3>
+                  <p><a class="btn btn-default" href="3" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/4.jpg" style="width: 140px; height: 140px;">
+                  <h3>Fjord Cadenza</h3>
+                  <p><a class="btn btn-default" href="4" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/5.jpg" style="width: 140px; height: 140px;">
+                  <h3>Folven sykkelfestival</h3>
+                  <p><a class="btn btn-default" href="5" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/6.jpg" style="width: 140px; height: 140px;">
+                  <h3>Fosnavåg Rock</h3>
+                  <p><a class="btn btn-default" href="6" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/7.jpg" style="width: 140px; height: 140px;">
+                  <h3>Gapskratten Revyfestival</h3>
+                  <p><a class="btn btn-default" href="7" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/8.jpg" style="width: 140px; height: 140px;">
+                  <h3>Glopperock</h3>
+                  <p><a class="btn btn-default" href="8" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/9.jpg" style="width: 140px; height: 140px;">
+                  <h3>Go with the Flø</h3>
+                  <p><a class="btn btn-default" href="9" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/10.jpg" style="width: 140px; height: 140px;">
+                  <h3>Indiefjord</h3>
+                  <p><a class="btn btn-default" href="10" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/11.jpg" style="width: 140px; height: 140px;">
+                  <h3>Jugendfest</h3>
+                  <p><a class="btn btn-default" href="11" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/12.jpg" style="width: 140px; height: 140px;">
+                  <h3>Kulturdagane i Hornindal</h3>
+                  <p><a class="btn btn-default" href="12" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/13.jpg" style="width: 140px; height: 140px;">
+                  <h3>Kyrkjehola Kulturbeite</h3>
+                  <p><a class="btn btn-default" href="13" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/14.jpg" style="width: 140px; height: 140px;">
+                  <h3>Langevågsdagane </h3>
+                  <p><a class="btn btn-default" href="14" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/16.jpg" style="width: 140px; height: 140px;">
+                  <h3>Malakoff Rockfestival</h3>
+                  <p><a class="btn btn-default" href="16" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/17.jpg" style="width: 140px; height: 140px;">
+                  <h3>Maritm sommarfestival</h3>
+                  <p><a class="btn btn-default" href="17" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/18.jpg" style="width: 140px; height: 140px;">
+                  <h3>Den norske matfestivalen</h3>
+                  <p><a class="btn btn-default" href="18" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/19.jpg" style="width: 140px; height: 140px;">
+                  <h3>Midsundfestivalen</h3>
+                  <p><a class="btn btn-default" href="19" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/20.jpg" style="width: 140px; height: 140px;">
+                  <h3>Midtsommardagar</h3>
+                  <p><a class="btn btn-default" href="20" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/21.jpg" style="width: 140px; height: 140px;">
+                  <h3>Midtsommerjazz</h3>
+                  <p><a class="btn btn-default" href="21" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/22.jpg" style="width: 140px; height: 140px;">
+                  <h3>Moldejazz</h3>
+                  <p><a class="btn btn-default" href="22" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/23.jpg" style="width: 140px; height: 140px;">
+                  <h3>Myldredagane</h3>
+                  <p><a class="btn btn-default" href="23" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/24.jpg" style="width: 140px; height: 140px;">
+                  <h3>Måløy Havfiskefestival </h3>
+                  <p><a class="btn btn-default" href="24" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/25.jpg" style="width: 140px; height: 140px;">
+                  <h3>Måløydagene</h3>
+                  <p><a class="btn btn-default" href="25" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/26.jpg" style="width: 140px; height: 140px;">
+                  <h3>Naturfestivalen</h3>
+                  <p><a class="btn btn-default" href="26" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/27.jpg" style="width: 140px; height: 140px;">
+                  <h3>Norsk Fjellfestival</h3>
+                  <p><a class="btn btn-default" href="27" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/28.jpg" style="width: 140px; height: 140px;">
+                  <h3>Oldendagane</h3>
+                  <p><a class="btn btn-default" href="28" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/29.jpg" style="width: 140px; height: 140px;">
+                  <h3>Opplev Hareid</h3>
+                  <p><a class="btn btn-default" href="29" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/30.jpg" style="width: 140px; height: 140px;">
+                  <h3>RaumaRock</h3>
+                  <p><a class="btn btn-default" href="30" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/31.jpg" style="width: 140px; height: 140px;">
+                  <h3>Smak av Ulstein</h3>
+                  <p><a class="btn btn-default" href="31" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/32.jpg" style="width: 140px; height: 140px;">
+                  <h3>Sommardagane i Utvik</h3>
+                  <p><a class="btn btn-default" href="32" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/33.jpg" style="width: 140px; height: 140px;">
+                  <h3>Sommardagar på Hellesylt</h3>
+                  <p><a class="btn btn-default" href="33" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/34.jpg" style="width: 140px; height: 140px;">
+                  <h3>Sommerfesten på Giske</h3>
+                  <p><a class="btn btn-default" href="34" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/35.jpg" style="width: 140px; height: 140px;">
+                  <h3>Stryn Gummibåtfestival</h3>
+                  <p><a class="btn btn-default" href="35" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/44.jpg" style="width: 140px; height: 140px;">
+                  <h3>Stryn motorfestival</h3>
+                  <p><a class="btn btn-default" href="44" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/36.jpg" style="width: 140px; height: 140px;">
+                  <h3>Strynefestivalen</h3>
+                  <p><a class="btn btn-default" href="36" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/43.jpg" style="width: 140px; height: 140px;">
+                  <h3>Sunnmøre Middelalderfestival</h3>
+                  <p><a class="btn btn-default" href="43" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/37.jpg" style="width: 140px; height: 140px;">
+                  <h3>Trandalblues</h3>
+                  <p><a class="btn btn-default" href="37" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/38.jpg" style="width: 140px; height: 140px;">
+                  <h3>Trebåtfestivalen</h3>
+                  <p><a class="btn btn-default" href="38" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/39.jpg" style="width: 140px; height: 140px;">
+                  <h3>VanylvsRåkk</h3>
+                  <p><a class="btn btn-default" href="39" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/40.jpg" style="width: 140px; height: 140px;">
+                  <h3>Ørskog Bluesfest 2014 </h3>
+                  <p><a class="btn btn-default" href="40" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/41.jpg" style="width: 140px; height: 140px;">
+                  <h3>Ålesund Båtfestival</h3>
+                  <p><a class="btn btn-default" href="41" role="button">Les mer »</a></p>
+              </div>
+          
+                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/42.jpg" style="width: 140px; height: 140px;">
+                  <h3> Ålesund Kammermusikkfestival </h3>
+                  <p><a class="btn btn-default" href="42" role="button">Les mer »</a></p>
+              </div>
+          
+        <!-- /.col-lg-3 col-md-4 col-sm-6 festivalrute -->
+      </div>
+      <!-- /.row -->
+    </div>
+    
+  <!-- /.container marketing-->
+  <!--End liste-->
+  <!--/ .container-->
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+   <a name="sendinn">
+   </a>
+
+   <!--skjema desktop-->
+   <div class="hidden-xs hidden-sm hidden-md">
+ <iframe src="https://docs.google.com/forms/d/1CVRuk9_a4wL96D0i3IWV7ojzrPTcKzb3IpJbw8-E1lw/viewform?embedded=true" width="100%" height="1215" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+ </div>
+ </div>
+  <!--end skjema desktop-->
+  
+  <!--skjema sm-->
+   <div class="hidden-xs hidden-lg">
+ <iframe src="https://docs.google.com/forms/d/1CVRuk9_a4wL96D0i3IWV7ojzrPTcKzb3IpJbw8-E1lw/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+ </div>
+  <!--end skjema mobil-->
+
+
+ <!--skjema mobil-->
+   <div class="hidden-sm hidden-md hidden-lg">
+  <iframe src="https://docs.google.com/forms/d/1CVRuk9_a4wL96D0i3IWV7ojzrPTcKzb3IpJbw8-E1lw/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+ </div>
+  <!--end skjema mobil-->
+  
+
+  <!--skjema desktop-
+<div>
+  <h1>SEND INN DIN FESTIVAL</h1>
+  <h3>Sunnmørsposten vil gjerne ha med alle festivaler, bygdedager og martnadager i festivalguiden. Mangler din festival? Send inn skjemaet og du vil bli kontaktet for detaljer.</h3>
+  <form role="form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Navn på festival">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Dato for festival">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Ditt navn">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Ditt telefonnummer">
+  </div>
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<!--end skjema desktop-->
+ <!--skjema mobil-
+<div>
+  <h1>SEND INN DIN FESTIVAL</h1>
+  <h3>Sunnmørsposten vil gjerne ha med alle festivaler, bygdedager og martnadager i festivalguiden. Mangler din festival? Send inn skjemaet og du vil bli kontaktet for detaljer.</h3>
+  <form role="form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Navn på festival">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Dato for festival">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Ditt navn">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Ditt telefonnummer">
+  </div>
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<!--end skjema mobil-->
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+
+    <a name="some">
+    </a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23smpno" data-widget-id="466131340258074624">
+          Tweets om «#smpno»
+        </a>
+        
+        <script>
+          !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+        
+      </div>
+      <div class="col-md-6 
+hidden-xs">
+  <div id="map" style="height:600px;max-width:520px">
+  </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+
+<br>
+
+    <a name="om">
+    </a>
+<!--footer destop-->
+ <nav class="navbar navbar-default navbar-bottom hidden-xs" role="navigation" style="background-color:black;height:600px">
+  <div class="container">
+    <p class="footertekst">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <img src="/static/images/smp.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer destop-->
+
+<!--footer mobil-->
+ <nav class="navbar navbar-default navbar-bottom hidden-sm hidden-md hidden-lg" role="navigation" style="background-color:black;height:300px">
+  <div class="container">
+    <p class="footertekstmobil">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <br>
+      <img src="/static/images/smpmobil.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer mobil-->
+
+
+        <script type="text/javascript">
+            var map = L.map('map').setView([62.480906, 6.464081], 7);
+            var mapquestLayer = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>,<a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
+                subdomains: ['otile1','otile2','otile3','otile4']
+            });
+            map.addLayer(mapquestLayer);
+            var data = {
+              "type": "FeatureCollection",
+              "features": [
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Back In The Fields Rock Festival",
+                    "id": "1"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.18482, 62.48221]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Bjørnsonfestivalen",
+                    "id": "45"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7.14407, 62.73321]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Brøvøllsfestivalen",
+                    "id": "2"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.64662, 62.29194]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Dei nynorske festspela",
+                    "id": "3"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.07215, 62.18214]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Fjord Cadenza",
+                    "id": "4"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.67544, 62.50424]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Folven sykkelfestival",
+                    "id": "5"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7.16682, 61.91804]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Fosnavåg Rock",
+                    "id": "6"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5,63429, 62,34075]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Gapskratten Revyfestival",
+                    "id": "7"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7,12625, 62,52093]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Glopperock",
+                    "id": "8"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.21690, 61.76660]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Go with the Flø",
+                    "id": "9"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.85096, 62.40318]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Indiefjord",
+                    "id": "10"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.55945, 62.10055]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Jugendfest",
+                    "id": "11"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.18788, 62.46928]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Kulturdagane i Hornindal",
+                    "id": "12"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.52418, 61.96921]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Kyrkjehola Kulturbeite",
+                    "id": "13"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.98630, 62.38203]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Langevågsdagane ",
+                    "id": "14"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.18369, 62.43789]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Malakoff Rockfestival",
+                    "id": "16"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.99155, 61.90626]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Maritm sommarfestival",
+                    "id": "17"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.63107, 62.34138]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Den norske matfestivalen",
+                    "id": "18"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.15680, 62.47442]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Midsundfestivalen",
+                    "id": "19"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.67164, 62.67282]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Midtsommardagar",
+                    "id": "20"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7.23655, 62.25542]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Midtsommerjazz",
+                    "id": "21"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.15641, 62.47274]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Moldejazz",
+                    "id": "22"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7.15548, 62.73600]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Myldredagane",
+                    "id": "23"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.44583, 62.59463]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Måløy Havfiskefestival ",
+                    "id": "24"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.11189, 61.93256]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Måløydagene",
+                    "id": "25"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.11416, 61.93280]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Naturfestivalen",
+                    "id": "26"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.12964, 62.20030]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Norsk Fjellfestival",
+                    "id": "27"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7.68722, 62.56745]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Oldendagane",
+                    "id": "28"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.80933, 61.83379]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Opplev Hareid",
+                    "id": "29"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.02966, 62.36904]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "RaumaRock",
+                    "id": "30"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7.68728, 62.56928]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Smak av Ulstein",
+                    "id": "31"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.84697, 62.34261]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Sommardagane i Utvik",
+                    "id": "32"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.51889, 61.80658]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Sommardagar på Hellesylt",
+                    "id": "33"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.86082, 62.08780]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Sommerfesten på Giske",
+                    "id": "34"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.04235, 62.51019]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Stryn Gummibåtfestival",
+                    "id": "35"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.77685, 61.91325]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Stryn motorfestival",
+                    "id": "44"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.72265, 61.90448]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Strynefestivalen",
+                    "id": "36"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [7.1669054031, 61.917967998]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Sunnmøre Middelalderfestival",
+                    "id": "43"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.23463, 62.46842]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Trandalblues",
+                    "id": "37"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.50354, 62.25362]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Trebåtfestivalen",
+                    "id": "38"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.84823, 62.34203]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "VanylvsRåkk",
+                    "id": "39"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [5.58315, 62.19502]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Ørskog Bluesfest 2014 ",
+                    "id": "40"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.81062, 62.48371]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": "Ålesund Båtfestival",
+                    "id": "41"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.15236, 62.47127]
+                  }
+                },
+                
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "festival": " Ålesund Kammermusikkfestival ",
+                    "id": "42"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [6.14948, 62.47223]
+                  }
+                }
+                
+              ]
+            };
+             var dataLayer = L.geoJson(data, {
+                onEachFeature: function(feature, layer) {
+                    layer.bindPopup(
+                        '<a href="' + feature.properties.id + '/">' +
+                            feature.properties.festival +
+                        '</a>'
+                    );
+                }
+            });
+            map.addLayer(dataLayer);
+        </script>
+
+<!-- Start OLD TNS: -->
+<script type="text/javascript">
+/*<![CDATA[*/
+var sp_e0 = {
+"s":"polaris",
+"cp":"polaris/smp/forsiden",
+"url": "http://www.smp.no/"
+}
+spring.c(sp_e0);
+/*]]>*/
+</script>
+<noscript>
+<img src="http://polaris.tns-cs.net/j0=,,,;+,cp=polaris/smp/forsiden+url=http://www.smp.no/;;;" />
+</noscript>
+<!-- End OLD TNS -->
+<!-- Start GA -->
+<script type="text/javascript">
+// <![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+try {
+var pageTracker = _gat._getTracker("UA-35932862-1");
+pageTracker._setDomainName(".smp.no");
+pageTracker._trackPageview();
+} catch(err) {}
+// ]]>
+</script>
+<!-- End GA -->
+<!-- cXense script begin -->
+<div id="cX-root" style="display:none"></div>
+<script type="text/javascript">
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+cX.callQueue.push(['setAccountId', '9222304501162645932']);
+cX.callQueue.push(['setSiteId', '9222304501162645933']);
+cX.callQueue.push(['sendPageViewEvent']);
+</script>
+<script type="text/javascript">
+(function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async';
+scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js';
+var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {};} ());
+</script>
+<!-- cXense script end -->
+
+    </body>
+</html>
