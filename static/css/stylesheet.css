@@ -293,6 +293,12 @@ left: 0px;
 text-align: center;
 
 }
+
+.annonse img{
+width: 100%;
+height: auto;
+}
+
 .listehead{
 	font-size: 2em;
 
