@@ -55,10 +55,9 @@ background-image: url("http://interaktiv.smp.no/2014/Festivaler/images/tile.jpg"
 
 }
 
-.h1-break{
+.h2-break{
 	position:relative;
 	display:block;
-	margin:35px 0 15px;
 	letter-spacing:0.21em;
 	font-weight:500;
 	text-transform:uppercase;
@@ -66,16 +65,6 @@ background-image: url("http://interaktiv.smp.no/2014/Festivaler/images/tile.jpg"
 	text-align:center;
 }
 
-.h2-break{
-	position:relative;
-	display:block;
-	margin:35px 0 15px;
-	letter-spacing:0.21em;
-	font-weight:500;
-	text-transform:uppercase;
-	color:#555555;
-	text-align:center;
-}
 
 .knapp{
 margin-top: 15px;
