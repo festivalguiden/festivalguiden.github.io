@@ -67,7 +67,7 @@ background-image: url("http://interaktiv.smp.no/2014/Festivaler/images/tile.jpg"
 
 
 .knapp{
-margin-top: 15px;
+margin: 15px 2px 2px;
 }
 
 .knapp2{
@@ -85,8 +85,8 @@ min-width: 128px;
 }
 
 .knappebredde{
-	margin-right: 150px;
-	margin-left:150px;
+	margin-right: 0px;
+	margin-left:0px;
 }
 
 
@@ -308,4 +308,35 @@ height: auto;
 }
 .avstand{
 	margin-bottom: 5px;
+}
+
+.polarisMarketing:before {
+color: #CCCCCC;
+content: "\25bc ANNONSE";
+font-size: 10px;
+position: absolute;
+top: -14px;
+left: 0;
+z-index: 2;
+}
+
+.polarisMarketing {
+position: relative;
+z-index: 99 !important;
+}
+
+.btn-warning.active{
+   border-color: #000;background-color: #303030;
+}
+
+.btn-danger.active {
+   border-color: #000;background-color: #303030;
+}
+
+.btn-success.active{
+   border-color: #000;background-color: #303030;
+}
+
+.btn-info.active {
+   border-color: #000;background-color: #303030;
 }
