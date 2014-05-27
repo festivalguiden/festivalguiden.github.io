@@ -266,6 +266,11 @@ left: 0px;
 	text-align: center;
 }
 
+#profile {
+margin: auto;
+max-width: 800px;
+}
+
 .arrangor{
 	font-size: 1.2em;
 	text-align: center;
@@ -293,6 +298,7 @@ text-align: center;
 
 .annonse img{
 width: 100%;
+max-width: 1150px;
 height: auto;
 }
 
